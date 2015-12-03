@@ -7,7 +7,7 @@ Currently it rewrites only `sendto` and `recvfrom`.
 ## Usage
 
 ```
-$ gcc -Wall -nostartfiles -fpic -shared otherport.c -o otherport.so -ldl -D_GNU_SOURCE
+$ make
 $ OLD_PORT=53 NEW_PORT=10053 LD_PRELOAD=$PWD/otherport.so ...
 ```
 
